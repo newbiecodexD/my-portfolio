@@ -284,7 +284,7 @@ const Home: React.FC = () => {
             minhlebin11072001@gmail.com
           </p>
           <div className="flex justify-center gap-4 mt-4">
-            <a href="https://facebook.com/minhlebin11072001" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary">
+            <a href="https://facebook.com/knight.debugging" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary">
               <SiFacebook />
             </a>
           </div>
