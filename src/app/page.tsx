@@ -154,7 +154,7 @@ const Home: React.FC = () => {
           <a href="https://x.com/LeCongM02127579" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary">
             <FaTwitter />
           </a>
-          <a href="https://facebook.com/minhlebin11072001" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary">
+          <a href="https://facebook.com/knight.debugging" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary">
             <FaFacebook />
           </a>
         </div>
