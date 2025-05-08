@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa'
 import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiSocketdotio, SiTypescript, SiJavascript, SiTailwindcss, SiNextdotjs } from 'react-icons/si'
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
@@ -154,6 +154,9 @@ const Home: React.FC = () => {
           <a href="https://x.com/LeCongM02127579" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary">
             <FaTwitter />
           </a>
+          <a href="https://facebook.com/minhlebin11072001" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary">
+            <FaFacebook />
+          </a>
         </div>
       </section>
 
@@ -280,6 +283,11 @@ const Home: React.FC = () => {
           <p className="text-xl font-semibold text-primary">
             minhlebin11072001@gmail.com
           </p>
+          <div className="flex justify-center gap-4 mt-4">
+            <a href="https://facebook.com/minhlebin11072001" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary">
+              <FaFacebook />
+            </a>
+          </div>
         </div>
       </section>
     </div>
