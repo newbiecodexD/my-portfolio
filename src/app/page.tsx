@@ -1,8 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa'
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiSocketdotio, SiTypescript, SiJavascript, SiTailwindcss, SiNextdotjs } from 'react-icons/si'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiSocketdotio, SiTypescript, SiJavascript, SiTailwindcss, SiNextdotjs, SiFacebook } from 'react-icons/si'
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import confetti from 'canvas-confetti'
@@ -155,7 +155,7 @@ const Home: React.FC = () => {
             <FaTwitter />
           </a>
           <a href="https://facebook.com/knight.debugging" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary">
-            <FaFacebook />
+            <SiFacebook />
           </a>
         </div>
       </section>
@@ -285,7 +285,7 @@ const Home: React.FC = () => {
           </p>
           <div className="flex justify-center gap-4 mt-4">
             <a href="https://facebook.com/minhlebin11072001" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary">
-              <FaFacebook />
+              <SiFacebook />
             </a>
           </div>
         </div>
