@@ -2,7 +2,25 @@
 
 import Image from 'next/image'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiSocketdotio, SiTypescript, SiJavascript, SiTailwindcss, SiNextdotjs } from 'react-icons/si'
+import { 
+  SiMongodb, 
+  SiExpress, 
+  SiReact, 
+  SiNodedotjs, 
+  SiSocketdotio, 
+  SiTypescript, 
+  SiJavascript, 
+  SiTailwindcss, 
+  SiNextdotjs, 
+  SiStripe,
+  SiFirebase,
+  SiPostgresql,
+  SiDocker,
+  SiRedis,
+  SiFacebook
+} from 'react-icons/si'
+import { BsBoxArrowUpRight } from 'react-icons/bs'
+import { RiLockPasswordLine } from 'react-icons/ri'
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import confetti from 'canvas-confetti'
@@ -104,6 +122,25 @@ const skills: Skill[] = [
     level: 'Advanced'
   }
 ];
+
+const techIcons: { [key: string]: React.ReactNode } = {
+  'MongoDB': <SiMongodb className="text-xl text-green-500" />,
+  'Express.js': <SiExpress className="text-xl text-gray-800 dark:text-white" />,
+  'React': <SiReact className="text-xl text-blue-500" />,
+  'Node.js': <SiNodedotjs className="text-xl text-green-600" />,
+  'Socket.io': <SiSocketdotio className="text-xl text-black dark:text-white" />,
+  'Real-time Chat': <SiSocketdotio className="text-xl text-black dark:text-white" />,
+  'TypeScript': <SiTypescript className="text-xl text-blue-600" />,
+  'JavaScript': <SiJavascript className="text-xl text-yellow-400" />,
+  'Next.js': <SiNextdotjs className="text-xl text-black dark:text-white" />,
+  'Tailwind CSS': <SiTailwindcss className="text-xl text-cyan-500" />,
+  'Payment Gateway': <SiStripe className="text-xl text-purple-500" />,
+  'Firebase': <SiFirebase className="text-xl text-orange-500" />,
+  'PostgreSQL': <SiPostgresql className="text-xl text-blue-400" />,
+  'Docker': <SiDocker className="text-xl text-blue-600" />,
+  'Redis': <SiRedis className="text-xl text-red-500" />,
+  'JWT': <RiLockPasswordLine className="text-xl text-purple-400" />
+};
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -309,20 +346,6 @@ const Home: React.FC = () => {
                   <h4 className="text-sm font-semibold mb-2">Công nghệ sử dụng:</h4>
                   <div className="flex flex-wrap gap-3">
                     {project.technologies.map((tech, index) => {
-                      const techIcons: { [key: string]: React.ReactNode } = {
-                        'MongoDB': <SiMongodb className="text-xl text-green-500" />,
-                        'Express.js': <SiExpress className="text-xl text-gray-800 dark:text-white" />,
-                        'React': <SiReact className="text-xl text-blue-500" />,
-                        'Node.js': <SiNodedotjs className="text-xl text-green-600" />,
-                        'Socket.io': <SiSocketdotio className="text-xl text-black dark:text-white" />,
-                        'Real-time Chat': <SiSocketdotio className="text-xl text-black dark:text-white" />,
-                        'TypeScript': <SiTypescript className="text-xl text-blue-600" />,
-                        'JavaScript': <SiJavascript className="text-xl text-yellow-400" />,
-                        'Next.js': <SiNextdotjs className="text-xl text-black dark:text-white" />,
-                        'Tailwind CSS': <SiTailwindcss className="text-xl text-cyan-500" />,
-                        'Payment Gateway': <SiStripe className="text-xl text-purple-500" />
-                      };
-
                       return (
                         <div
                           key={index}
@@ -355,7 +378,7 @@ const Home: React.FC = () => {
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg transition-colors"
                     >
-                      <SiVercel className="text-xl" />
+                      <BsBoxArrowUpRight className="text-xl" />
                       <span>Live Demo</span>
                     </a>
                   )}
