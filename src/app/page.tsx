@@ -143,28 +143,6 @@ const techIcons: { [key: string]: React.ReactNode } = {
 };
 
 const Home: React.FC = () => {
-  useEffect(() => {
-    // Add smooth scroll behavior
-    document.documentElement.style.scrollBehavior = 'smooth';
-
-    // Confetti effect
-    confetti({
-      particleCount: 150,
-      spread: 90,
-      origin: { y: 0.6 }
-    });
-
-    // Cleanup
-    return () => {
-      document.documentElement.style.scrollBehavior = 'auto';
-    };
-  }, []);
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Xử lý form submit ở đây
-  };
-
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
@@ -191,18 +169,10 @@ const Home: React.FC = () => {
             priority
           />
         </div>
-        <motion.div 
-          className="text-3xl md:text-5xl font-bold text-yellow-300 mb-8 overflow-hidden whitespace-nowrap drop-shadow-[0_0_10px_#fff]"
-          initial={{ x: "100%" }}
-          animate={{ x: "-100%" }}
-          transition={{ 
-            duration: 40,
-            repeat: Infinity,
-            ease: "linear"
-          }}
-        >
-          Hello, My name is Lê Công Minh. A Software Engineer FullStack and my expertise is JS, TS, C#, MERN, MongoDB, SQL
-        </motion.div>
+        <h2 className="text-3xl md:text-5xl font-bold text-yellow-300 drop-shadow-[0_0_10px_#fff] mb-8">
+          Hello, My name is Lê Công Minh. A Software Engineer FullStack
+        </h2>
+
         <div className="flex gap-4">
           <a href="https://github.com/newbiecodexD" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-primary">
             <FaGithub />
