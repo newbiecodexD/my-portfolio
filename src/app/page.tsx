@@ -238,11 +238,11 @@ const Home: React.FC = () => {
         <h2 className="text-3xl font-bold mb-8 text-center">Về Tôi</h2>
         <div className="max-w-3xl mx-auto">
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
-            Tôi là một Full Stack Developer với hơn 5 năm kinh nghiệm trong việc phát triển web và ứng dụng.
+            Tôi là một Full Stack Developer trong việc phát triển web và ứng dụng.
             Tôi đam mê tạo ra những sản phẩm chất lượng cao và trải nghiệm người dùng tuyệt vời.
           </p>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            Với kiến thức sâu rộng về cả frontend và backend, tôi có thể xây dựng các ứng dụng web hoàn chỉnh
+            Với kiến thức am hiểu về cả frontend và backend, tôi có thể xây dựng các ứng dụng web hoàn chỉnh
             từ đầu đến cuối, đảm bảo hiệu suất, bảo mật và khả năng mở rộng.
           </p>
         </div>
