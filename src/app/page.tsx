@@ -170,7 +170,7 @@ const Home: React.FC = () => {
           />
         </div>
         <h2 className="text-3xl md:text-5xl font-bold text-yellow-300 drop-shadow-[0_0_10px_#fff] mb-8">
-          Hello, My name is Lê Công Minh. A Software Engineer FullStack
+          Hello there Lê Công Minh is my full name . A Software Engineer !!!
         </h2>
 
         <div className="flex gap-4">
